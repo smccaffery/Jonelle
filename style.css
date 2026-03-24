@@ -118,6 +118,14 @@ section { padding: 90px 0; text-align: center; }
     margin-top: 50px; 
 }
 
+#services .grid {
+    display: grid;
+}
+
+@media (min-width: 768px) {
+    #services .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 .card { 
     background: var(--white); 
     flex: 1 1 300px; 
