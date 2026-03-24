@@ -66,3 +66,18 @@ footer { text-align: center; padding: 40px 0; font-size: 0.9rem; color: #888; bo
     border-radius: 8px 8px 0 0;
     margin-bottom: 20px;
 }
+/* --- Logo Styling --- */
+.nav-logo {
+    height: 50px;       /* This is the sweet spot for most headers */
+    width: auto;         /* Keeps the logo from looking squished */
+    display: block;      /* Prevents weird spacing issues */
+    margin: 5px 0;       /* Adds a tiny bit of breathing room top/bottom */
+}
+
+/* Make sure the nav container handles the logo properly */
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
