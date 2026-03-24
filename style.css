@@ -210,6 +210,30 @@ section { padding: 90px 0; text-align: center; }
 
 .results-content { padding: 25px; text-align: left; }
 
+/* --- Service Details (Deep Clean Page) --- */
+.service-detail { padding: 80px 0; text-align: left; }
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.rounded-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: block;
+    margin: 0 auto;
+}
+
+.check-list { list-style: none; padding: 0; margin-top: 15px; }
+.check-list li { margin-bottom: 12px; position: relative; padding-left: 25px; }
+.check-list li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+
 /* --- Form & Footer --- */
 .booking-section { background: var(--light); }
 
@@ -240,4 +264,5 @@ footer {
     nav ul { gap: 15px; }
     .results-grid { grid-template-columns: 1fr; }
     .results-img-split { height: 180px; }
+    .detail-grid { grid-template-columns: 1fr; gap: 40px; }
 }
