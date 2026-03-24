@@ -124,7 +124,18 @@ section { padding: 90px 0; text-align: center; }
 }
 
 @media (min-width: 768px) {
-    #services .grid { grid-template-columns: repeat(2, 1fr); }
+    #services .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    #services .card { 
+        max-width: none; /* Allows cards to stretch symmetrically to fill the 2 columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    #services .grid { 
+        grid-template-columns: repeat(4, 1fr); /* Places all 4 cards in a perfectly balanced single row */
+    }
 }
 
 .card { 
