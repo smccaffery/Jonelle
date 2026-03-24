@@ -32,12 +32,53 @@ header h1 { font-size: 3.5rem; margin-bottom: 15px; line-height: 1.1; }
 
 /* Grid & Service Cards */
 section { padding: 80px 0; text-align: center; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-.card { background: var(--white); padding: 0 0 30px 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; height: 100%; }
-.card-img { width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; }
-.card h3 { padding: 0 20px; margin-bottom: 10px; }
-.card p { padding: 0 20px; font-size: 0.95rem; color: #666; margin-bottom: 15px; }
+/* --- Improved Grid & Cards --- */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the 4th card if it's alone on a row */
+    gap: 30px;
+    margin-top: 50px;
+}
 
+.card {
+    background: var(--white);
+    flex: 1 1 300px; /* Allows cards to grow/shrink but stay around 300px */
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Softer, deeper shadow */
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Keep text left-aligned for checkmarks */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Adds a subtle lift on hover */
+}
+
+.card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pushes everything to fill the card height */
+}
+
+.service-list {
+    margin-bottom: 25px;
+    flex-grow: 1; /* Pushes the button to the absolute bottom */
+}
+
+/* Make all buttons look consistent */
+.card .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+    margin-top: auto; /* Always sticks to bottom */
+}
 /* Service Lists */
 .service-list { text-align: left; list-style: none; padding: 0 25px; font-size: 0.9rem; }
 .service-list li { margin-bottom: 8px; position: relative; padding-left: 20px; }
