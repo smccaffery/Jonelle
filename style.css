@@ -91,7 +91,7 @@ header h1 { font-size: 3.2rem; margin-bottom: 15px; line-height: 1.1; color: var
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
 }
 
-.service-area { font-weight: 700; font-size: 1.1rem; color: var(--dark); }
+.service-area { font-weight: 700; font-size: 1.1rem; color: var(--dark); margin-bottom: 30px; }
 
 /* --- Buttons --- */
 .btn { 
