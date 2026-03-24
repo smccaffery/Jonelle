@@ -8,6 +8,7 @@ function injectLayout() {
                 </div>
                 <ul>
                     <li><a href="index.html#services">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="index.html#book">Request a Cleaning</a></li>
                 </ul>
             </div>
