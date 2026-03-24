@@ -25,67 +25,89 @@
         <div class="container">
             <h1>A Cleaner Home, <br>A Happier You.</h1>
             <p>Reliable, professional house cleaning tailored to your schedule.</p>
-            <a href="#book" class="btn">View Availability</a>
+            <a href="#book" class="btn">Request A Cleaning</a>
         </div>
     </header>
 
     <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="grid">
-                
-                <div class="card">
-                    <img src="images/Supplies.jpg" alt="Eco-friendly cleaning supplies" class="card-img">
-                    <h3>Standard Clean</h3>
-                    <p>Perfect for maintaining a tidy home on a weekly or bi-weekly basis.</p>
-                </div>
-                
-                <div class="card">
-                    <img src="images/Bathroom.jpg" alt="Meticulous deep cleaning detail" class="card-img">
-                    <h3>Deep Clean</h3>
-                    <p>A top-to-bottom scrub for those times you need a fresh start.</p>
-                </div>
-                
-                <div class="card">
-                    <img src="images/LivingRoom.jpg" alt="Clean and empty living room" class="card-img">
-                    <h3>Move In/Out</h3>
-                    <p>We handle the grime so you can focus on your new beginning.</p>
-                </div>
-                
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="images/Supplies.jpg" alt="Eco-friendly cleaning supplies" class="card-img">
+                <h3>Standard Clean</h3>
+                <p>Routine maintenance to keep your home consistently fresh.</p>
+                <ul class="service-list">
+                    <li>Dusting all reachable surfaces</li>
+                    <li>Vacuuming and mopping floors</li>
+                    <li>Sanitizing counters & sinks</li>
+                    <li>Cleaning mirrors and glass</li>
+                    <li>Kitchen and bathroom refresh</li>
+                </ul>
             </div>
+            
+            <div class="card">
+                <img src="images/Bathroom.jpg" alt="Meticulous deep cleaning detail" class="card-img">
+                <h3>Deep Clean</h3>
+                <p>A top-to-bottom scrub for a total home rejuvenation.</p>
+                <ul class="service-list">
+                    <li>Everything in Standard Clean</li>
+                    <li>Scrubbing baseboards & trim</li>
+                    <li>Cleaning behind/under furniture</li>
+                    <li>Deep scrubbing tile and grout</li>
+                    <li>Window tracks and vents</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <img src="images/LivingRoom.jpg" alt="Clean and empty living room" class="card-img">
+                <h3>Move In/Out</h3>
+                <p>Ensuring a spotless transition for your new beginning.</p>
+                <ul class="service-list">
+                    <li>Deep clean of empty property</li>
+                    <li>Inside cabinets and drawers</li>
+                    <li>Inside oven and refrigerator</li>
+                    <li>Closets and shelving wiped</li>
+                    <li>Full wall and floor sanitization</li>
+                </ul>
+            </div>
+            
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="book" class="booking-section">
     <div class="container">
         <h2>Request a Cleaning</h2>
         <p>Fill out the form below, and we'll get back to you to confirm your booking.</p>
         
-        <form action="https://formspree.io/f/dannyandjonelle@gmail.com" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="name" placeholder="Jane Doe" required>
-            </div>
+        <form action="https://formsubmit.co/dannyandjonelle@gmail.com" method="POST" class="contact-form">
+    
+    <input type="hidden" name="_subject" value="New Cleaning Request!">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false"> <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="name" placeholder="Jane Doe" required>
+    </div>
 
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="_replyto" placeholder="jane@example.com" required>
-            </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+    </div>
 
-            <div class="form-group">
-                <label for="address">Service Address</label>
-                <input type="text" id="address" name="address" placeholder="123 Maple St, Anytown" required>
-            </div>
+    <div class="form-group">
+        <label for="address">Service Address</label>
+        <input type="text" id="address" name="address" placeholder="123 Maple St, Anytown" required>
+    </div>
 
-            <div class="form-group">
-                <label for="message">Availability & Details</label>
-                <textarea id="message" name="message" rows="5" placeholder="Let us know what days/times work best for you and any specific needs..." required></textarea>
-            </div>
+    <div class="form-group">
+        <label for="message">Availability & Details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Let us know what days/times work best for you..." required></textarea>
+    </div>
 
-            <input type="text" name="_gotcha" style="display:none" />
-
-            <button type="submit" class="btn btn-submit">Send Request</button>
-        </form>
+    <button type="submit" class="btn btn-submit">Send Request</button>
+</form>
         </div>
 </section>
 
