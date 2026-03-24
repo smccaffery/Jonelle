@@ -169,3 +169,43 @@ footer {
     .results-grid { grid-template-columns: 1fr; }
     .results-img-split { height: 200px; }
 }
+
+/* --- Centered Navigation Styles --- */
+nav .container.nav-content {
+    display: flex;
+    flex-direction: column; /* Stacks logo on top of links */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-brand-centered {
+    margin-bottom: 15px; /* Space between logo and links */
+}
+
+.nav-logo {
+    height: 120px; /* Increased size - adjust this number to go bigger/smaller */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05); /* Subtle pop on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Balanced spacing for centered links */
+}
+
+/* Mobile Fix for Centered Nav */
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 80px; /* Slightly smaller on phones */
+    }
+}
