@@ -33,3 +33,36 @@ section { padding: 80px 0; text-align: center; }
 .placeholder-box { color: #999; }
 
 footer { text-align: center; padding: 40px 0; font-size: 0.9rem; color: #888; border-top: 1px solid #eee; }
+
+/* --- Add these new styles to your existing style.css --- */
+
+/* Updated Hero styling to handle background images */
+.hero-with-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0; /* Slightly more padding for the image view */
+}
+
+/* Styling for images inside Service Cards */
+.card-img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* This crops the image perfectly to fit the container */
+    border-radius: 8px 8px 0 0; /* Match card corner radius (top only) */
+    margin-bottom: 20px;
+    display: block; /* Removes any default inline spacing */
+}
+
+/* Placeholder styling (until you add the 3rd image) */
+.card-img-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #e0e0e0;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+}
