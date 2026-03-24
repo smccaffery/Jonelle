@@ -57,18 +57,37 @@
     </section>
 
     <section id="book" class="booking-section">
-        <div class="container">
-            <h2>Book Your Cleaning</h2>
-            <p>Select a date and time that works for you below.</p>
-            
-            <div class="calendar-container">
-                <div class="placeholder-box">
-                    <p>Your Booking Calendar Will Appear Here</p>
-                    <small>(Paste your embed code from Calendly/Setmore in this div)</small>
-                </div>
+    <div class="container">
+        <h2>Request a Cleaning</h2>
+        <p>Fill out the form below, and we'll get back to you to confirm your booking.</p>
+        
+        <form action="https://formspree.io/f/dannyandjonelle@gmail.com" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="name" placeholder="Jane Doe" required>
             </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Service Address</label>
+                <input type="text" id="address" name="address" placeholder="123 Maple St, Anytown" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Availability & Details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Let us know what days/times work best for you and any specific needs..." required></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <button type="submit" class="btn btn-submit">Send Request</button>
+        </form>
         </div>
-    </section>
+</section>
 
     <footer>
         <p>&copy; 2026 Simply Essential Cleaning. All rights reserved.</p>
