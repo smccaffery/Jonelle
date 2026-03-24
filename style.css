@@ -124,3 +124,36 @@ nav .container {
 .btn-submit:hover {
     background: #0056b3;
 }
+
+/* Service List Styling */
+.service-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Adds a small checkmark or bullet before each item */
+.service-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Ensures cards stay same height for a clean grid */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
