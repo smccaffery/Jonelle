@@ -4,9 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("images");
 
-  // Passthrough for favicon files in the root
-  eleventyConfig.addPassthroughCopy("*.png");
-  eleventyConfig.addPassthroughCopy("*.ico");
+  // Passthrough for the webmanifest
   eleventyConfig.addPassthroughCopy("site.webmanifest");
 
   return {
