@@ -312,8 +312,13 @@ footer {
     .hero-text-box { padding: 30px 15px; }
     header h1 { font-size: 2.5rem; }
     .hero-subtext { font-size: 1rem; }
-    .nav-logo { height: 100px; }
-    nav ul { gap: 15px; }
+    
+    /* Mobile Navigation Adjustments */
+    nav .container.nav-content { padding: 15px 0; }
+    .nav-logo { height: 80px; }
+    nav ul { gap: 10px 15px; flex-wrap: wrap; padding: 0 10px; }
+    nav a { font-size: 0.8rem; }
+
     .results-grid { grid-template-columns: 1fr; }
     .results-img-split { height: 180px; }
     .detail-grid { grid-template-columns: 1fr; gap: 40px; }
