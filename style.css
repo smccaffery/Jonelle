@@ -73,11 +73,11 @@ header {
     text-align: center; 
     background-size: cover; 
     background-position: center; 
-    background-image: linear-gradient(rgba(42, 157, 143, 0.1), rgba(244, 247, 246, 0.95)), url('images/LivingRoom.webp');
+    background-image: linear-gradient(rgba(42, 157, 143, 0.1), rgba(244, 247, 246, 0.2)), url('images/LivingRoom.webp');
 }
 
 .hero-text-box {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     padding: 40px 20px;
     border-radius: 15px;
