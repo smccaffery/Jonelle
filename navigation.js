@@ -1,15 +1,18 @@
 // Function to inject the Header and Footer
 function injectLayout() {
+    const isBlog = window.location.pathname.includes('/blog/');
+    const basePath = isBlog ? '../' : '';
+
     const headerHTML = `
         <nav>
             <div class="container nav-content">
                 <div class="nav-brand-centered">
-                    <a href="index.html"><img src="images/Logo.png" alt="Simply Essential Cleaning Logo" class="nav-logo"></a>
+                    <a href="${basePath}index.html"><img src="${basePath}images/Logo.png" alt="Simply Essential Cleaning Logo" class="nav-logo"></a>
                 </div>
                 <ul>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="index.html#book">Request a Cleaning</a></li>
+                    <li><a href="${basePath}index.html#services">Services</a></li>
+                    <li><a href="${basePath}blog/index.html">Blog</a></li>
+                    <li><a href="${basePath}index.html#book">Request a Cleaning</a></li>
                 </ul>
             </div>
         </nav>
