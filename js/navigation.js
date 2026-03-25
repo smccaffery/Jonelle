@@ -1,4 +1,4 @@
-// Function to inject the Header and Footer
+// Function to inject the Header and Footer for each page
 function injectLayout() {
     const isBlog = window.location.pathname.includes('/blog/');
     const basePath = isBlog ? '../' : '';
