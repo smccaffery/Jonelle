@@ -10,6 +10,7 @@ function injectLayout() {
                     <a href="${basePath}index.html"><img src="${basePath}images/Logo.png" alt="Simply Essential Cleaning Logo" class="nav-logo"></a>
                 </div>
                 <ul>
+                    <li><a href="${basePath}about.html">About Us</a></li>
                     <li><a href="${basePath}index.html#services">Services</a></li>
                     <li><a href="${basePath}blog/index.html">Blog</a></li>
                     <li><a href="${basePath}index.html#book">Request a Cleaning</a></li>
