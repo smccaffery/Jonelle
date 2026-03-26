@@ -28,7 +28,7 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
             <div class="grid">
                 
                 <div class="card">
-                    <img src="/images/Supplies.webp" class="card-img" alt="Standard Clean">
+                    <img src="/images/Supplies.webp" class="card-img" alt="Cleaning supplies for a standard clean in Niagara">
                     <div class="card-content">
                         <h3>Standard Clean</h3>
                         <p>Routine maintenance tailored to your individual needs.</p>
@@ -43,7 +43,7 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
                 </div>
 
                 <div class="card">
-                    <img src="/images/Bathroom.webp" class="card-img" alt="Deep Clean">
+                    <img src="/images/Bathroom.webp" class="card-img" alt="A clean bathroom sink, an example of a deep clean in Niagara">
                     <div class="card-content">
                         <h3>Deep Clean</h3>
                         <p>A top-to-bottom scrub for a total home rejuvenation.</p>
@@ -58,7 +58,7 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
                 </div>
 
                 <div class="card">
-                    <img src="/images/LivingRoom.webp" class="card-img" alt="Move In Out">
+                    <img src="/images/LivingRoom.webp" class="card-img" alt="A clean living room for a move-in or move-out service in Niagara">
                     <div class="card-content">
                         <h3>Move In/Out</h3>
                         <p>Ensuring a spotless transition for your new beginning.</p>
@@ -73,7 +73,7 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
                 </div>
 
                 <div class="card">
-                    <img src="/images/Organization.webp" class="card-img" alt="Organization">
+                    <img src="/images/Organization.webp" class="card-img" alt="An organized closet, part of our home organization service in Niagara">
                     <div class="card-content">
                         <h3>Organization</h3>
                         <p>Decluttering and systemizing your living spaces.</p>
@@ -170,7 +170,7 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
                         <option value="deep-clean">Deep Clean</option>
                         <option value="move-in-out">Move In/Out</option>
                         <option value="organization">Organization</option>
-                        <option value="organization">Unsure</option>
+                        <option value="unsure">Unsure</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -182,3 +182,16 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
             </form>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const cleanType = urlParams.get('clean_type');
+            if (cleanType) {
+                const selectElement = document.getElementById('clean-type');
+                if (selectElement) {
+                    selectElement.value = cleanType;
+                }
+            }
+        });
+    </script>
