@@ -159,6 +159,16 @@ description: "Reliable, professional house cleaning servicing Southern Niagara: 
                     <input type="text" id="address" name="address" placeholder="123 Maple St, Port Colborne" required>
                 </div>
                 <div class="form-group">
+                    <label for="clean-type">Type of Clean</label>
+                    <select id="clean-type" name="clean_type" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="standard-clean">Standard Clean</option>
+                        <option value="deep-clean">Deep Clean</option>
+                        <option value="move-in-out">Move In/Out</option>
+                        <option value="organization">Organization</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="message">Availability & Details</label>
                     <textarea id="message" name="message" rows="5" placeholder="Which days work best? Any specific areas of focus?" required></textarea>
                 </div>
