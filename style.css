@@ -343,3 +343,43 @@ footer {
     .results-img-split { height: 180px; }
     .detail-grid { grid-template-columns: 1fr; gap: 40px; }
 }
+
+/* General styling for all form input elements */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc; /* A light grey border */
+  border-radius: 5px;
+  font-family: inherit; /* Inherit font from body for consistency */
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't increase total width */
+  margin-top: 5px; /* Small margin from label */
+  background-color: #fff; /* Explicit white background */
+  color: #333; /* Dark grey text color */
+}
+
+/* Specific styling for the select dropdown to remove default arrow and add a custom one */
+.contact-form select {
+  -webkit-appearance: none; /* Remove default arrow for Chrome, Safari, Edge */
+  -moz-appearance: none;    /* Remove default arrow for Firefox */
+  appearance: none;         /* Remove default arrow for modern browsers */
+  /* Custom SVG arrow for the dropdown */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-5.4H18.6c-5%200-9.3%201.8-13.2%205.4A17.6%2017.6%200%200%200%200%2082.2c0%204.8%201.8%209.1%205.4%2013.2l128%20128c3.9%203.9%208.7%205.9%2013.2%205.9s9.3-2%2013.2-5.9l128-128c3.9-3.9%205.4-8.7%205.4-13.2%200-4.8-1.8-9.1-5.4-13.2z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position the arrow to the right */
+  background-size: 12px; /* Size of the arrow */
+  padding-right: 30px; /* Add extra padding on the right to prevent text from overlapping the arrow */
+}
+
+/* Focus styles for accessibility and user feedback */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--primary-color, #2a9d8f); /* Use your site's primary color for focus, or a default blue */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.2); /* Light shadow for a subtle focus effect */
+}
