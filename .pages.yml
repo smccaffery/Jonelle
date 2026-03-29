@@ -1,33 +1,23 @@
-{
-  "content": [
-    {
-      "label": "Blog Posts",
-      "type": "collection",
-      "path": "blog",
-      "format": "json",
-      "slug": "{{title}}",
-      "fields": [
-        {
-          "name": "title",
-          "label": "Title",
-          "type": "string"
-        },
-        {
-          "name": "date",
-          "label": "Date",
-          "type": "date"
-        },
-        {
-          "name": "excerpt",
-          "label": "Short Summary",
-          "type": "text"
-        },
-        {
-          "name": "body",
-          "label": "Post Content",
-          "type": "rich-text"
-        }
-      ]
-    }
-  ]
-}
+content:
+  - label: Blog Posts
+    type: collection
+    path: blog # This is where your posts will be saved
+    format: json
+    exclude: ["index.json"]
+    slug: "{{title}}"
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: excerpt
+        label: Short Summary
+        type: string
+      - name: image
+        label: Cover Image URL
+        type: string
+      - name: body
+        label: Post Content
+        type: rich-text
