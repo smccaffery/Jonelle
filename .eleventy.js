@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: ".",
       output: "_site",
-      layouts: "_includes" // Specify the layouts directory
+      layouts: "_includes/layouts" // Specify the layouts directory
     },
     // Set Nunjucks as the default template engine for HTML files
     htmlTemplateEngine: "njk",
